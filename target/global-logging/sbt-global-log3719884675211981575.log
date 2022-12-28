@@ -1,0 +1,69 @@
+[debug] > Exec({file:/E:/MAGA/Scala-test/}root/run, None, None)
+[debug] Evaluating tasks: Compile / run
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[info] compiling 1 Scala source to E:\MAGA\Scala-test\target\scala-2.13\classes ...
+[info] Non-compiled module 'compiler-bridge_2.13' for Scala 2.13.10. Compiling...
+[info]   Compilation completed in 42.629s.
+[error] E:\MAGA\Scala-test\src\main\scala\test\ping.scala:1:14: object actors is not a member of package scala
+[error] import scala.actors.Actor
+[error]              ^
+[error] E:\MAGA\Scala-test\src\main\scala\test\ping.scala:2:14: object actors is not a member of package scala
+[error] import scala.actors.Actor._
+[error]              ^
+[error] E:\MAGA\Scala-test\src\main\scala\test\ping.scala:4:45: not found: type Actor
+[error] class Ping(count: int, pong: Actor) extends Actor {
+[error]                                             ^
+[error] E:\MAGA\Scala-test\src\main\scala\test\ping.scala:4:19: not found: type int
+[error] class Ping(count: int, pong: Actor) extends Actor {
+[error]                   ^
+[error] E:\MAGA\Scala-test\src\main\scala\test\ping.scala:4:30: not found: type Actor
+[error] class Ping(count: int, pong: Actor) extends Actor {
+[error]                              ^
+[error] E:\MAGA\Scala-test\src\main\scala\test\ping.scala:9:7: not found: value receive
+[error]       receive {
+[error]       ^
+[error] E:\MAGA\Scala-test\src\main\scala\test\ping.scala:10:14: not found: value Pong
+[error] Identifiers that begin with uppercase are not pattern variables but match the value in scope.
+[error]         case Pong =>
+[error]              ^
+[error] E:\MAGA\Scala-test\src\main\scala\test\ping.scala:19:13: not found: value exit
+[error]             exit()
+[error]             ^
+[error] E:\MAGA\Scala-test\src\main\scala\test\ping.scala:25:20: not found: type Actor
+[error] class Pong extends Actor {
+[error]                    ^
+[error] E:\MAGA\Scala-test\src\main\scala\test\ping.scala:29:7: not found: value receive
+[error]       receive {
+[error]       ^
+[error] E:\MAGA\Scala-test\src\main\scala\test\ping.scala:30:14: not found: value Ping
+[error] Identifiers that begin with uppercase are not pattern variables but match the value in scope.
+[error]         case Ping =>
+[error]              ^
+[error] E:\MAGA\Scala-test\src\main\scala\test\ping.scala:33:11: not found: value sender
+[error]           sender ! Pong
+[error]           ^
+[error] E:\MAGA\Scala-test\src\main\scala\test\ping.scala:33:20: not found: value Pong
+[error]           sender ! Pong
+[error]                    ^
+[error] E:\MAGA\Scala-test\src\main\scala\test\ping.scala:35:14: not found: value Stop
+[error] Identifiers that begin with uppercase are not pattern variables but match the value in scope.
+[error]         case Stop =>
+[error]              ^
+[error] E:\MAGA\Scala-test\src\main\scala\test\ping.scala:37:11: not found: value exit
+[error]           exit()
+[error]           ^
+[error] E:\MAGA\Scala-test\src\main\scala\test\ping.scala:42:25: not found: type Application
+[error] object pingpong extends Application {
+[error]                         ^
+[error] E:\MAGA\Scala-test\src\main\scala\test\ping.scala:45:8: value start is not a member of Ping
+[error]   ping.start
+[error]        ^
+[error] E:\MAGA\Scala-test\src\main\scala\test\ping.scala:46:8: value start is not a member of Pong
+[error]   pong.start
+[error]        ^
+[error] 18 errors found
+[error] (Compile / compileIncremental) Compilation failed
+[error] Total time: 49 s, completed 28 груд. 2022 15:44:20
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)
